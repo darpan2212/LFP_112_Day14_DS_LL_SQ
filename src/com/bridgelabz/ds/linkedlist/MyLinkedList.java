@@ -17,6 +17,20 @@ public class MyLinkedList<K> {
 		}
 		return true;
 	}
+	
+	public boolean addFirst(INode<K> newNode) {
+		if (tail == null) {
+			tail = newNode;
+		}
+		if (head == null) {
+			head = newNode;
+		} else {
+			INode<K> temp = head;
+			head = newNode;
+			head.setNext(temp);
+		}
+		return true;
+	}
 
 	@Override
 	public String toString() {
