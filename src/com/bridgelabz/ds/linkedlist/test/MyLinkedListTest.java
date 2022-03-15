@@ -56,10 +56,46 @@ public class MyLinkedListTest {
 		intList.addLast(secondNode);
 
 		intList.insert(1, thirdNode);
-		
+
 		intList.insert(2, fourthNode);
-		
+
 		System.out.println(intList);
+	}
+
+	@Test
+	public void pop() {
+		System.out.println(
+				"-------------------pop---------------------");
+		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
+		INode<Integer> firstNode = new MyNode<>(56);
+		INode<Integer> secondNode = new MyNode<>(30);
+		INode<Integer> thirdNode = new MyNode<>(70);
+
+		intList.addLast(firstNode);
+		intList.addLast(secondNode);
+		intList.addLast(thirdNode);
+
+		System.out.println("Before pop : " + intList);
+		System.out.println("Popped out node : "+intList.pop());
+		System.out.println("After pop : " + intList);
+	}
+
+	@Test
+	public void popLast() {
+		System.out.println(
+				"-------------------popLast---------------------");
+		MyLinkedList<Integer> intList = new MyLinkedList<Integer>();
+		INode<Integer> firstNode = new MyNode<>(56);
+		INode<Integer> secondNode = new MyNode<>(30);
+		INode<Integer> thirdNode = new MyNode<>(70);
+		
+		intList.addLast(firstNode);
+		intList.addLast(secondNode);
+		intList.addLast(thirdNode);
+		
+		System.out.println("Before pop : " + intList);
+		System.out.println("Popped out node : "+intList.popLast());
+		System.out.println("After pop : " + intList);
 	}
 
 }

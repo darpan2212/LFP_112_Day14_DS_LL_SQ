@@ -43,7 +43,7 @@ public class MyLinkedList<K> {
 			return false;
 		} else {
 			INode<K> temp = head;
-			for (int i=1;i<pos;i++) {
+			for (int i = 1; i < pos; i++) {
 				temp = temp.getNext();
 			}
 			INode<K> temp1 = temp.getNext();
@@ -63,9 +63,26 @@ public class MyLinkedList<K> {
 		return size;
 	}
 
+	public INode<K> pop() {
+		INode<K> temp = head;
+		head = head.getNext();
+		temp.setNext(null);
+		return temp;
+	}
+
+	public INode<K> popLast() {
+		INode<K> temp = head;
+		while (temp.getNext().getNext() != null) {
+			temp = temp.getNext();
+		}
+		tail=temp;
+		INode<K> poppedNode = tail.getNext();
+		tail.setNext(null);
+		return poppedNode;
+	}
+
 	@Override
 	public String toString() {
-
 		return head.toString();
 	}
 }
