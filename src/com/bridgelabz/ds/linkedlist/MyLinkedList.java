@@ -124,4 +124,15 @@ public class MyLinkedList<K> {
 		}
 		return -1;
 	}
+
+	public INode<K> get(int index) {
+		INode<K> temp = head;
+		for (int i = 0; i < size(); i++) {
+			if (i == index) {
+				return temp;
+			}
+			temp = temp.getNext();
+		}
+		return null;
+	}
 }

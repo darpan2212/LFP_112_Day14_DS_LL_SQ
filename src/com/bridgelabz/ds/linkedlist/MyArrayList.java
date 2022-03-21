@@ -2,7 +2,7 @@ package com.bridgelabz.ds.linkedlist;
 
 public class MyArrayList<K> implements MyList<K> {
 
-	private MyLinkedList<K> list;
+	protected MyLinkedList<K> list;
 
 	public MyArrayList() {
 		list = new MyLinkedList<>();
