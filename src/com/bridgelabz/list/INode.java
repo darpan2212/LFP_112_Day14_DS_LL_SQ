@@ -1,4 +1,4 @@
-package com.bridgelabz.ds.linkedlist;
+package com.bridgelabz.list;
 
 public interface INode<K> {
 	public void setKey(K key);

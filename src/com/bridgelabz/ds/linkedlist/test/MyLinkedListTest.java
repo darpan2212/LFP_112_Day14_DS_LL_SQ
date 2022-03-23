@@ -2,9 +2,9 @@ package com.bridgelabz.ds.linkedlist.test;
 
 import org.junit.Test;
 
-import com.bridgelabz.ds.linkedlist.INode;
 import com.bridgelabz.ds.linkedlist.MyLinkedList;
 import com.bridgelabz.ds.linkedlist.MyNode;
+import com.bridgelabz.list.INode;
 
 public class MyLinkedListTest {
 

@@ -1,4 +1,4 @@
-package com.bridgelabz.ds.linkedlist;
+package com.bridgelabz.list;
 
 public interface UnOrderedList<K> {
 

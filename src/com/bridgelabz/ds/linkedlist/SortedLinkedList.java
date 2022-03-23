@@ -1,5 +1,8 @@
 package com.bridgelabz.ds.linkedlist;
 
+import com.bridgelabz.list.INode;
+import com.bridgelabz.list.OrderedList;
+
 public class SortedLinkedList<K extends Comparable<K>>
 		implements OrderedList<K> {
 

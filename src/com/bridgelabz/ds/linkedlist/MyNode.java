@@ -1,5 +1,7 @@
 package com.bridgelabz.ds.linkedlist;
 
+import com.bridgelabz.list.INode;
+
 public class MyNode<K> implements INode<K> {
 
 	K key;

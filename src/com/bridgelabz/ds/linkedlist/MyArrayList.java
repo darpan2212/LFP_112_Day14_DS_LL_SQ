@@ -1,5 +1,8 @@
 package com.bridgelabz.ds.linkedlist;
 
+import com.bridgelabz.list.INode;
+import com.bridgelabz.list.UnOrderedList;
+
 public class MyArrayList<K> implements UnOrderedList<K> {
 
 	protected MyLinkedList<K> list;

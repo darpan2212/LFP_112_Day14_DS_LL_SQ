@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import com.bridgelabz.ds.linkedlist.MyArrayList;
-import com.bridgelabz.ds.linkedlist.OrderedList;
-import com.bridgelabz.ds.linkedlist.UnOrderedList;
 import com.bridgelabz.ds.linkedlist.SortedLinkedList;
+import com.bridgelabz.list.OrderedList;
+import com.bridgelabz.list.UnOrderedList;
 
 public class MyArrayListTest {
 
