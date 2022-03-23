@@ -35,11 +35,9 @@ public class MyLinkedList<K> {
 	public boolean insert(int pos, INode<K> newNode) {
 		if (pos == 0) {
 			addFirst(newNode);
-		}
-		if (pos == size()) {
+		} else if (pos == size()) {
 			addLast(newNode);
-		}
-		if (pos > size()) {
+		} else if (pos > size()) {
 			return false;
 		} else {
 			INode<K> temp = head;

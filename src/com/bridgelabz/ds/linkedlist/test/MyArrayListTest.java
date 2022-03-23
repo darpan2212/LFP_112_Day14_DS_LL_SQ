@@ -6,7 +6,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import com.bridgelabz.ds.linkedlist.MyArrayList;
-import com.bridgelabz.ds.linkedlist.MyList;
+import com.bridgelabz.ds.linkedlist.OrderedList;
+import com.bridgelabz.ds.linkedlist.UnOrderedList;
 import com.bridgelabz.ds.linkedlist.SortedLinkedList;
 
 public class MyArrayListTest {
@@ -16,7 +17,7 @@ public class MyArrayListTest {
 
 		System.out.println(
 				"----------------searchWithValue-----------------");
-		MyList<Integer> list = new MyArrayList<>();
+		UnOrderedList<Integer> list = new MyArrayList<>();
 
 		list.append(56);
 		list.append(30);
@@ -33,7 +34,7 @@ public class MyArrayListTest {
 	public void addAfterKey() {
 		System.out.println(
 				"-----------------------addAfterKey---------------------");
-		MyList<Integer> list = new MyArrayList<>();
+		UnOrderedList<Integer> list = new MyArrayList<>();
 
 		list.append(56);
 		list.append(30);
@@ -51,7 +52,7 @@ public class MyArrayListTest {
 	public void removeKeyAndSize() {
 		System.out.println(
 				"-----------------------removeKeyAndSize---------------------");
-		MyList<Integer> list = new MyArrayList<>();
+		UnOrderedList<Integer> list = new MyArrayList<>();
 
 		list.append(56);
 		list.append(30);
@@ -75,12 +76,12 @@ public class MyArrayListTest {
 	public void sortedList() {
 		System.out.println(
 				"-----------------------sortedList---------------------");
-		MyList<Integer> list = new SortedLinkedList<>();
+		OrderedList<Integer> list = new SortedLinkedList<>();
 
-		list.append(56);
-		list.append(30);
-		list.append(40);
-		list.append(70);
+		list.add(56);
+		list.add(30);
+		list.add(40);
+		list.add(70);
 
 		System.out.println(list);
 	}

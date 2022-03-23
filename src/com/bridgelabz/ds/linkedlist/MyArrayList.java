@@ -1,6 +1,6 @@
 package com.bridgelabz.ds.linkedlist;
 
-public class MyArrayList<K> implements MyList<K> {
+public class MyArrayList<K> implements UnOrderedList<K> {
 
 	protected MyLinkedList<K> list;
 

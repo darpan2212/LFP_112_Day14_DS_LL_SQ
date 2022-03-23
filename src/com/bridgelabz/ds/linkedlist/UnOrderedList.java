@@ -1,6 +1,6 @@
 package com.bridgelabz.ds.linkedlist;
 
-public interface MyList<K> {
+public interface UnOrderedList<K> {
 
 	//adding new item to the first
 	public void add(K item); 
