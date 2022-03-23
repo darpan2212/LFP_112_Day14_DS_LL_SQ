@@ -4,8 +4,8 @@ import com.bridgelabz.list.INode;
 
 public class MyLinkedList<K> {
 
-	INode<K> head;
-	INode<K> tail;
+	public INode<K> head;
+	public INode<K> tail;
 
 	public boolean addLast(INode<K> newNode) {
 		if (tail == null) {
